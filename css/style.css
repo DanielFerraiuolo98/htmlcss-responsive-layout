@@ -227,6 +227,28 @@ footer a{
         clear: both;
         display: table;
     }
+}
 
-   
+@media screen and (min-width: 992px) {
+    .container-small{
+        display: flex;
+    }
+
+    .ricetta{
+        width: 50%;
+    }
+
+    .icons span{
+        display: inline-block;
+    }
+
+    .copyright{
+        text-align: left;
+    }
+
+    .container-footer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
 }
