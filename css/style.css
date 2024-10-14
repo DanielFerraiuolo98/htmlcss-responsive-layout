@@ -1,3 +1,4 @@
+/*generals*/
 *{
     margin: 0;
     padding: 0;
@@ -23,21 +24,19 @@ body{
   font-style: normal;
 }
 
-
-.debug{
-    border: 1px solid red;
-}
-
+/*utilities*/
 .d-flex{
     display: flex;
 }
 
-.j-center{
-    justify-content: center;
+.d-none{
+    display: none;
 }
 
-.a-center{
-    align-items: center;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 ul{
@@ -71,11 +70,7 @@ h1{
     color: var(--color-contrast);
 }
 
-main{
-    background-color: var(--color-bg-color);
-    padding: 20px;
-}
-
+/*container*/
 .container{
     max-width: 1160px;
     margin: 0 auto;
@@ -83,6 +78,12 @@ main{
 
 .container-small{
     background-color: var(--color-white);
+}
+
+/*main*/
+main{
+    background-color: var(--color-bg-color);
+    padding: 20px;
 }
 
 h2{
@@ -93,10 +94,6 @@ h2{
 
 h2 span{
     color: var(--color-dark-text);
-}
-
-.d-none{
-    display: none;
 }
 
 h5{
@@ -155,25 +152,32 @@ hr{
     margin-top: 20px;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
 .tiramisù{
     width: 200px;
     float: left;
     padding: 5px;
 }
 
-p{
+.text{
     margin-top: 20px;
 }
 
+/*footer*/
 footer{
     background-color: var(--color-primary);
     min-height: 70px;
     padding: 20px;
+    color: white;
+}
+
+footer div{
+    justify-content: space-between;
+}
+
+footer p{
+    padding: 10px;
+}
+
+footer a{
     color: white;
 }
