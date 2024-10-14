@@ -24,6 +24,10 @@ body{
   font-style: normal;
 }
 
+.debug{
+    border: 1px solid red;
+}
+
 /*utilities*/
 .d-flex{
     display: flex;
@@ -31,12 +35,6 @@ body{
 
 .d-none{
     display: none;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 ul{
@@ -120,6 +118,8 @@ h5{
 
 .icons{
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 button{
@@ -155,10 +155,15 @@ hr{
     margin-top: 20px;
 }
 
+.clearfix{
+    width: 100%;
+    flex-direction: column;
+}
+
 .tiramisù{
-    width: 200px;
-    float: left;
-    padding: 5px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .text{
@@ -187,3 +192,9 @@ footer a{
 }
 
 /*media query*/
+
+@media screen and (min-width: 768px){
+    main{
+        padding: 40px;
+    }
+}
