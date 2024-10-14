@@ -41,10 +41,12 @@ body{
 
 ul{
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 li{
-    padding: 10px;
+    padding: 10px; 
 }
 
 span{
@@ -68,6 +70,7 @@ h1{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);    
     text-transform: uppercase;
     color: var(--color-contrast);
+    text-align: center;
 }
 
 /*container*/
@@ -102,7 +105,7 @@ h5{
 }
 
 .image{
-    width: 75%;
+    width: 100%;
 }
 
 .image img{
@@ -111,7 +114,7 @@ h5{
 }
 
 .ricetta{
-    width: 25%;
+    width: 100%;
     padding: 20px;
 }
 
@@ -120,7 +123,7 @@ h5{
 }
 
 button{
-    padding: 10px 70px;
+    padding: 10px 20px;
     border-radius: 50px;
     background-color: var(--color-white);
     margin: 20px 0;
@@ -171,13 +174,16 @@ footer{
 }
 
 footer div{
-    justify-content: space-between;
+    text-align: center;
 }
 
 footer p{
     padding: 10px;
+    text-align: center;
 }
 
 footer a{
     color: white;
 }
+
+/*media query*/
