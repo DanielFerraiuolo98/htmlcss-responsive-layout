@@ -24,10 +24,6 @@ body{
   font-style: normal;
 }
 
-.debug{
-    border: 1px solid red;
-}
-
 /*utilities*/
 .d-flex{
     display: flex;
@@ -155,11 +151,6 @@ hr{
     margin-top: 20px;
 }
 
-.clearfix{
-    width: 100%;
-    flex-direction: column;
-}
-
 .tiramisù{
     width: 100%;
     margin: 0 auto;
@@ -197,4 +188,45 @@ footer a{
     main{
         padding: 40px;
     }
+
+    h1{
+        text-align: left;
+    }
+
+    .dessert{
+        display: inline-block;
+    }
+
+   .ricetta ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .ricetta ul li:first-child{
+        position: absolute;
+        top:0;
+        left: 0;
+        padding-bottom: 15px;
+    }
+
+    .icons button{
+        padding: 10px 50px;
+    }
+
+    .immagine .tiramisù{
+        float: left;
+        width: 40%;
+        padding: 5px;
+    }
+
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+   
 }
